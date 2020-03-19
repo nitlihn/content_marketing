@@ -9,7 +9,7 @@ function sidenVises() {
 /* Set the width of the side navigation to 250px */
 function openNav() {
   console.log("yo");
-  document.querySelector("#mySidenav").style.height = "250px";
+  document.querySelector("#mySidenav").style.height = "100%";
   document.querySelector("#kryds").addEventListener("click", closeNav)
 }
 
