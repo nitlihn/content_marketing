@@ -11,7 +11,25 @@
 </head>
 
 <body>
-    <h1>My Bamboo</h1>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="/" class="logo-link">
+                        <img class="responsive" src="Logo her..." alt="">
+                    </a>
+                    <button class="nav-toggle" type="button">
+                        <span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div id="home-navigation">
         <ul class="nav">
             <li class="nav-item">
@@ -29,21 +47,92 @@
         </ul>
     </div>
 
-    <div id="carouselSlide" class="carousel slide" data-ride="carousel" data-interval="2000">
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="background-color: #e4f0d8;">
-                <img class="d-block w-100" src="img/bamboodrink.png" alt="Bamboo">
+    <div id="slide-1" class="slider-container">
+        <div class="royalSlider rsDefault rsAutoHeight rsHor rsFade">
+            <div class="rsOverflow" style="width: 1792px; height: 1056.84px; transition: height 600ms ease-in-out 0s;">
+                <div class="rsContainer">
+                    <div style="z-index: 0; display: none; opacity: 0; transition-duration: 0ms; transition-timing-function: cubic-beizer:cubic-bezier(0.454, 0.05, 0.05, cubic-bezier(0.445, 0.05, 0.55, 0.95);"
+                        class="rsSlide">
+                        <div class="slider-slide"
+                            style="background-color: #8cc751; visibility:visible; opacity: 0; transition: opacity 400ms ease-in-out 0s;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 order-md-1 col-md-6 col-xl-7 col-xxl-8 align-self-center">
+                                        <img class="d-block w-100" src="img/bamboodrink.png" alt="Bamboo">
+                                    </div>
+                                    <div
+                                        class="col-12 order-md-0 col-md-6 col-xl-5 col-xxl-4 align-self-center slider-text">
+                                        <h1>My Bamboo</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
+                                            libero
+                                            mauris.
+                                            Proin
+                                            posuere
+                                            diam ac interdum sodales. Fusce tempor arcu consequat maximus
+                                            iaculis
+                                        </p>
+                                        <a class="button" href=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="z-index: 0; display: none; opacity: 0; transition-duration: 0ms; transition-timing-function: cubic-beizer:cubic-bezier(0.454, 0.05, 0.05, cubic-bezier(0.445, 0.05, 0.55, 0.95);"
+                        class="rsSlide">
+                        <div class="slider-slide" style="background-color: #dcc3c3;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 order-md-1 col-md-6 col-xl-7 col-xxl-8 align-self-center">
+                                        <img class="d-block w-100" src="img/boost.png" alt="Bamboo">
+                                    </div>
+                                    <div
+                                        class="col-12 order-md-0 col-md-6 col-xl-5 col-xxl-4 align-self-center slider-text">
+                                        <h1>My Bamboo</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
+                                            libero
+                                            mauris.
+                                            Proin
+                                            posuere
+                                            diam ac interdum sodales. Fusce tempor arcu consequat maximus
+                                            iaculis
+                                        </p>
+                                        <a class="button" href=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="z-index: 0; display: none; opacity: 0; transition-duration: 0ms; transition-timing-function: cubic-beizer:cubic-bezier(0.454, 0.05, 0.05, cubic-bezier(0.445, 0.05, 0.55, 0.95);"
+                        class="rsSlide">
+                        <div class="slider-slide" style="background-color: #e9fbff;"> == $0
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 order-md-1 col-md-6 col-xl-7 col-xxl-8 align-self-center">
+                                        <img class="d-block w-100" src="img/beauty.png.png" alt="Bamboo">
+                                    </div>
+                                    <div
+                                        class="col-12 order-md-0 col-md-6 col-xl-5 col-xxl-4 align-self-center slider-text">
+                                        <h1>My Bamboo</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
+                                            libero
+                                            mauris.
+                                            Proin
+                                            posuere
+                                            diam ac interdum sodales. Fusce tempor arcu consequat maximus
+                                            iaculis
+                                        </p>
+                                        <a class="button" href=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item" style="background-color: #dcc3c3;">
-                <img class="d-block w-100" src="img/boost.png" alt="Boost">
-            </div>
-
-            <div class="carousel-item" style="background-color: #e9fbff;">
-                <img class="d-block w-100" src="img/beauty.png" alt="Beauty">
-            </div>
-
+            <div style="clear:both; float:none;"></div>
         </div>
     </div>
+
 
     <div id="slide-2" class="container">
         <div class="row">
@@ -59,16 +148,15 @@
     </div>
     <hr>
 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/lottie.js"></script>
+    <script src="js/royalslider.js"></script>
+    <script src="js/in-view.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
