@@ -215,3 +215,13 @@ img {
     background-color: rgb(146, 177, 151);
     height: 55rem;
 }
+
+/* Footer */
+
+hr {
+    border: none;
+    margin: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
