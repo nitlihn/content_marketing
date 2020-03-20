@@ -28,18 +28,29 @@ p {
   padding-top: 200px;
 }
 
-#menu {
+.menu_container {
   z-index: 1;
   position: absolute;
   top: 60px;
   right: 11%;
-  font-size: 60px;
-  margin: 0px;
-  text-align: center;
   border: 2px solid #BEAF8C;
   border-radius: 50%;
-  height: 45px;
-  width: 45px;
+  padding-bottom: 8px;
+  height: 50px;
+  width: 50px;
+}
+
+#menu_burger {
+  z-index: 1;
+  position: absolute;
+  font-size: 60px;
+  margin-top: -27px;
+  margin-left: 6.5px;
+  padding-bottom: 8px;
+}
+
+.menu_container:hover {
+  background-color: #BEAF8C;
 }
 
 /*Logo*/
@@ -49,7 +60,6 @@ p {
   left: 10px;
   width: 150px;
   height: 15px;
-  background-image: url(img/logo.png);
   background-position: top;
   background-size: 100%;
   padding: 1rem;
