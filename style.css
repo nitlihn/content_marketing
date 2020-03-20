@@ -218,12 +218,34 @@ p {
 } */
 
 /* Section 2 */
-/* Footer */
 
-hr {
-  border: none;
-  margin: 0;
-  height: 2px;
-  width: 100%;
-  background-color: black;
+/*Footer*/
+
+.footer {
+  text-align: center;
+  position: sticky;
+  font-family: "Poppins", sans-serif;
+  color: #c8c7ae;
+}
+
+.media_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  font-size: 25px;
+  margin: 2vw;
+  color: #bdbd19;
+}
+
+.fa {
+  width: 50px;
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 10px;
+  margin: 4vw;
+  justify-content: center;
 }
