@@ -24,6 +24,10 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 
+.col-6 {
+  padding-top: 200px;
+}
+
 #menu {
   z-index: 1;
   position: absolute;
@@ -181,6 +185,7 @@ p {
   bottom: 10%;
   transition: opacity 0.3s, visibility 0.3s
 }
+
 
 
 /* Footer */
