@@ -133,7 +133,7 @@ p {
   text-align: right;
 }
 
-#home-navigation .nav li + li {
+#home-navigation .nav li+li {
   margin-top: 25px;
 }
 
@@ -219,7 +219,20 @@ p {
   transition: opacity 0.3s, visibility 0.3s
 } */
 
+
+
+
+
+
+
+
 /* Section 2 info */
+
+.row_info {
+  background-image: url(img/sebastian-staines-Jk4b7zztsek-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .column {
   float: left;
