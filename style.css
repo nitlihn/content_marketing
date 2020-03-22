@@ -234,6 +234,16 @@ p {
   background-attachment: fixed;
 }
 
+.row_info h2 {
+  font-family: "Abril Fatface", cursive;
+}
+
+.row_info p {
+  padding-top: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+
 .column {
   float: left;
   width: 33.33%;
