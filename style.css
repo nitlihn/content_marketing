@@ -1,212 +1,212 @@
 :root {
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --breakpoint-xxl: 1600px;
-    --font-family-Abril-Fatface: "Helvetica Neue", Arial, sans-serif;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1600px;
+  --font-family-Abril-Fatface: "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-size: 40px;
-    margin-bottom: 30px;
-    letter-spacing: 4px;
-    font-family: "Abril Fatface", cursive;
+  font-size: 40px;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+  font-family: "Abril Fatface", cursive;
 }
 
 p {
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
 }
 
 .col-6 {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 
 .menu_container {
-    z-index: 1;
-    position: absolute;
-    top: 60px;
-    right: 11%;
-    border: 2px solid #beaf8c;
-    border-radius: 50%;
-    padding-bottom: 8px;
-    height: 50px;
-    width: 50px;
+  z-index: 1;
+  position: absolute;
+  top: 60px;
+  right: 11%;
+  border: 2px solid #beaf8c;
+  border-radius: 50%;
+  padding-bottom: 8px;
+  height: 50px;
+  width: 50px;
 }
 
 #menu_burger {
-    z-index: 1;
-    position: absolute;
-    font-size: 60px;
-    margin-top: -27px;
-    margin-left: 6.5px;
-    padding-bottom: 8px;
+  z-index: 1;
+  position: absolute;
+  font-size: 60px;
+  margin-top: -27px;
+  margin-left: 6.5px;
+  padding-bottom: 8px;
 }
 
 .menu_container:hover {
-    background-color: #beaf8c;
+  background-color: #beaf8c;
 }
 
 /*Logo*/
 #container_logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 150px;
-    height: 15px;
-    background-position: top;
-    background-size: 100%;
-    background-image: url(img/Logo.png);
-    padding: 1rem;
-    margin-left: 1.2rem;
-    margin-top: 0.3rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  height: 15px;
+  background-position: top;
+  background-size: 100%;
+  background-image: url(img/Logo.png);
+  padding: 1rem;
+  margin-left: 1.2rem;
+  margin-top: 0.3rem;
 }
 
 /* The side navigation menu */
 .sidenav {
-    margin: 0px;
-    height: 0;
-    width: 100%;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: rgb(160, 159, 139);
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    transition: 0.5s;
-    z-index: 3;
+  margin: 0px;
+  height: 0;
+  width: 100%;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(160, 159, 139);
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  z-index: 3;
 }
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-align: center;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #8e8e74;
+  color: #8e8e74;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-    font-size: 36px;
-    text-align: right;
-    padding-top: 59.3px;
-    padding-right: 11.6%;
+  font-size: 36px;
+  text-align: right;
+  padding-top: 59.3px;
+  padding-right: 11.6%;
 }
 
 /* Navigation */
 
 #home-navigation {
-    display: none;
+  display: none;
 }
 
 #home-navigation .nav {
-    display: block;
+  display: block;
 }
 
 #home-navigation .nav:after {
-    content: "";
-    width: 2px;
-    height: 90%;
-    position: absolute;
-    right: -27px;
-    top: 4px;
-    background-color: black;
-    z-index: -1;
+  content: "";
+  width: 2px;
+  height: 90%;
+  position: absolute;
+  right: -27px;
+  top: 4px;
+  background-color: black;
+  z-index: -1;
 }
 
 #home-navigation .nav li {
-    display: block;
-    text-align: right;
+  display: block;
+  text-align: right;
 }
 
 #home-navigation .nav li + li {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 #home-navigation .nav li a {
-    padding: 0;
-    color: black;
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    text-decoration: none;
+  padding: 0;
+  color: black;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  text-decoration: none;
 }
 
 #home-navigation .nav li a.active:after {
-    background-color: white;
-    width: 18px;
-    height: 18px;
-    transform: translate(5px, -50%);
+  background-color: white;
+  width: 18px;
+  height: 18px;
+  transform: translate(5px, -50%);
 }
 
 #home-navigation .nav li a:hover:after,
 #home-navigation .nav li a:focus:after {
-    background-color: white;
+  background-color: white;
 }
 
 #home-navigation .nav li a:after {
-    content: "";
-    position: absolute;
-    right: -30px;
-    top: 50%;
-    z-index: 1;
-    border-radius: 50%;
-    transform: translate(0, -50%);
-    height: 8px;
-    width: 8px;
-    background-color: black;
-    border: 2px solid black;
-    transition: all 0.3s;
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  z-index: 1;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border: 2px solid black;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
-    #home-navigation {
-        display: block;
-        position: fixed;
-        z-index: 51;
-        right: 80px;
-        bottom: 10%;
-        transition: opacity 0.3s, visibility 0.3s;
-    }
+  #home-navigation {
+    display: block;
+    position: fixed;
+    z-index: 51;
+    right: 80px;
+    bottom: 10%;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
 }
 
 */
 
 /* Forside */
 .button {
-    display: inline-block;
-    border: 2px solid #beaf8c;
-    padding: 10px 15px;
-    font-weight: 700;
-    border-radius: 25px;
-    font-size: 13px;
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: transparent;
-    transition: background-color 0.3s;
-    color: black;
+  display: inline-block;
+  border: 2px solid #beaf8c;
+  padding: 10px 15px;
+  font-weight: 700;
+  border-radius: 25px;
+  font-size: 13px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  color: black;
 }
 
 .button:hover {
-    background-color: #beaf8c;
+  background-color: #beaf8c;
 }
 
 /* slide 2 */
@@ -219,35 +219,74 @@ p {
   transition: opacity 0.3s, visibility 0.3s
 } */
 
-/* Section 2 */
+/* Section 2 info */
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+}
+
+.left,
+.right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
 /*Footer*/
 
 .footer {
-    text-align: center;
-    position: sticky;
-    font-family: "Poppins", sans-serif;
-    color: #c8c7ae;
+  text-align: center;
+  position: sticky;
+  font-family: "Poppins", sans-serif;
+  color: #c8c7ae;
 }
 
 .media_wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .item {
-    font-size: 25px;
-    margin: 2vw;
-    color: #bdbd19;
+  font-size: 25px;
+  margin: 2vw;
+  color: #bdbd19;
 }
 
 .fa {
-    width: 50px;
-    justify-content: center;
+  width: 50px;
+  justify-content: center;
 }
 
 .copyright {
-    font-size: 10px;
-    margin: 4vw;
-    justify-content: center;
+  font-size: 10px;
+  margin: 4vw;
+  justify-content: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.copyright p {
+  font-size: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
