@@ -5,7 +5,6 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --breakpoint-xxl: 1600px;
-  --font-family-Abril-Fatface: "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -16,12 +15,26 @@ h1 {
   font-size: 40px;
   margin-bottom: 30px;
   letter-spacing: 4px;
-  font-family: "Abril Fatface", cursive;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
 }
 
 p {
   font-size: 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Cormorant Garamond", serif;
+}
+
+hr {
+  border-top: solid black 3px;
+  width: 13%;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  hr {
+    width: 8%;
+    border-top: solid black 3px;
+  }
 }
 
 .col-6 {
@@ -133,7 +146,7 @@ p {
   text-align: right;
 }
 
-#home-navigation .nav li+li {
+#home-navigation .nav li + li {
   margin-top: 25px;
 }
 
@@ -219,13 +232,6 @@ p {
   transition: opacity 0.3s, visibility 0.3s
 } */
 
-
-
-
-
-
-
-
 /* Section 2 info */
 
 .row_info {
@@ -235,14 +241,29 @@ p {
 }
 
 .row_info h2 {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .row_info p {
   padding-top: 1rem;
-  font-family: "Raleway", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
+.row_info hr {
+  border-top: solid black 3px;
+  width: 13%;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  hr {
+    width: 8%;
+    border-top: solid black 3px;
+  }
+}
 
 .column {
   float: left;
@@ -257,7 +278,65 @@ p {
   font-size: 18px;
 }
 
+/* Start Learn Section */
 
+.narrow {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgb(233, 225, 219);
+}
+
+.btn-secondary {
+  border: 3px solid #beaf8c;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.4rem 10rem;
+  background-color: transparent;
+  color: black;
+}
+
+.btn-secondary:hover {
+  border: 3px solid #beaf8c;
+  background-color: #beaf8c;
+  color: white;
+}
+/* End Learn Section */
+
+/* Start Fixed Background */
+.heading-underline {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto 5rem;
+}
+
+.fixed-background {
+  background-image: url(img/sebastian-staines-Jk4b7zztsek-unsplash.jpg);
+  z-index: -1;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7rem 2rem;
+}
+.fixed-background h2 {
+  margin-bottom: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+}
+
+.fixed-background p {
+  margin-top: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* End Fixed Bacground */
+
+@media only screen and (min-width: 600px) {
+  .row_2 p {
+    padding-left: 6rem;
+    padding-right: 5em;
+  }
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -286,7 +365,6 @@ p {
 }
 
 /* Last Row front page  */
-
 
 /*Footer*/
 
