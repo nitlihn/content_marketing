@@ -511,9 +511,38 @@ header .container {
 
 /* Last Row front page  */
 
-/*Footer*/
-
+/* Start Footer */
 .footer {
+  background-color: #101d2c;
+}
+
+.shop-info {
+  padding-top: 3.5rem;
+}
+.shop-info i {
+  color: rgb(255, 255, 255);
+  font-size: 2.6rem;
+}
+
+.shop-info h1 {
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.shop-info p,
+.shop-info address {
+  color: rgba(225, 225, 225, 0.5);
+}
+
+.footer hr {
+  border-top: 1px solid rgba(225, 225, 225, 0.5);
+  width: 100%;
+}
+/* End Footer */
+
+/* .footer {
   text-align: center;
   position: sticky;
   font-family: "Poppins", sans-serif;
@@ -549,3 +578,4 @@ header .container {
   padding-bottom: 0;
   margin-bottom: 0;
 }
+ */
