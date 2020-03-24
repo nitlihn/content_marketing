@@ -157,13 +157,15 @@ header {
     display: none;
   }
 
-  .john {
+  .absolute {
     position: absolute;
+    transform: initial;
   }
 
   .navbar-brand {
     position: initial;
-    transform: initial;
+
+
   }
 
   .nav-list {
@@ -176,7 +178,7 @@ header {
     transform: initial;
     transition: initial;
     margin: 0;
-    padding: 4rem 4rem;
+    padding: 0rem 0rem 0 40rem;
   }
 
   .nav-item {
