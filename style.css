@@ -1,3 +1,4 @@
+/* Start Global Styles */
 :root {
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -11,6 +12,10 @@
   box-sizing: border-box;
 }
 
+a {
+  color: white !important;
+}
+
 h1 {
   font-size: 40px;
   margin-bottom: 30px;
@@ -22,6 +27,7 @@ h1 {
 p {
   font-size: 20px;
   font-family: "Cormorant Garamond", serif;
+  margin: 0;
 }
 
 hr {
@@ -40,8 +46,154 @@ hr {
 .col-6 {
   padding-top: 200px;
 }
+/* End Global Styles */
 
-.menu_container {
+/* Start Header */
+header {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+header .container {
+  position: relative;
+  height: 100%;
+  padding: 0;
+}
+
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  max-width: 100px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 650ms;
+}
+
+.navbar-brand:hover {
+  opacity: 0.8;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 25px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background-color: red;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.hamburger-menu i {
+  font-size: 2rem;
+  color: blue;
+  margin: auto;
+}
+
+.hamburger-menu .fa-times {
+  display: none;
+}
+
+.hamburger-menu .fa-times.open {
+  display: block;
+}
+
+.hamburger-menu .fa-bars.open {
+  display: none;
+}
+
+.nav-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  list-style: none;
+  background-color: cadetblue;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 650ms;
+}
+
+.nav-list.open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (min-width: 576px) {
+  .navbar-brand {
+    max-width: 150px;
+  }
+  .hamburger-menu {
+    top: 35px;
+    right: 25px;
+  }
+}
+
+@media (min-width: 786px) {
+}
+
+@media (min-width: 992px) {
+  header > .container {
+    padding: 0 15px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .navbar-brand {
+    position: initial;
+    transform: initial;
+  }
+  .nav-list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: initial;
+    flex-direction: row;
+    opacity: initial;
+    transform: initial;
+    transition: initial;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-item {
+    margin: 0 30px;
+  }
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+  .nav-link {
+    position: relative;
+    padding: 0;
+  }
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: hotpink;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 650ms;
+  }
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+}
+/* End Header */
+
+/* .menu_container {
   z-index: 1;
   position: absolute;
   top: 60px;
@@ -65,9 +217,9 @@ hr {
 .menu_container:hover {
   background-color: #beaf8c;
 }
-
+ */
 /*Logo*/
-#container_logo {
+/* #container_logo {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -79,49 +231,50 @@ hr {
   padding: 1rem;
   margin-left: 1.2rem;
   margin-top: 0.3rem;
-}
+} */
 
 /* The side navigation menu */
-.sidenav {
+/* .sidenav {
   margin: 0px;
   height: 0;
-  width: 100%;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
+  width: 100%; */
+/* 0 width - change this with JavaScript */
+/* position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   background-color: rgb(160, 159, 139);
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  transition: 0.5s;
+  overflow-x: hidden; */
+/* Disable horizontal scroll */
+/*  transition: 0.5s;
   z-index: 3;
-}
+} */
 
 /* The navigation menu links */
-.sidenav a {
+/* .sidenav a {
   padding: 8px 8px 8px 32px;
   text-align: center;
   font-size: 25px;
   color: black;
   display: block;
   transition: 0.3s;
+  justify-content: center;
 }
 
 .sidenav a:hover {
   color: #8e8e74;
-}
+} */
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+/* .sidenav .closebtn {
   font-size: 36px;
   text-align: right;
   padding-top: 59.3px;
   padding-right: 11.6%;
-}
+} */
 
 /* Navigation */
-
+/* 
 #home-navigation {
   display: none;
 }
@@ -201,9 +354,10 @@ hr {
 }
 
 */
+*/
 
 /* Forside */
-.button {
+/* .button {
   display: inline-block;
   border: 2px solid #beaf8c;
   padding: 10px 15px;
@@ -220,55 +374,7 @@ hr {
 
 .button:hover {
   background-color: #beaf8c;
-}
-
-/* slide 2 */
-/* #home-navigation {
-  display: block;
-  position: fixed;
-  z-index: 51;
-  right: 80px;
-  bottom: 10%;
-  transition: opacity 0.3s, visibility 0.3s
 } */
-
-/* Section 2 info */
-
-.row_info {
-  background-image: url(img/sebastian-staines-Jk4b7zztsek-unsplash.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.row_info h2 {
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  font-weight: bolder;
-  text-align: center;
-}
-
-.row_info p {
-  padding-top: 1rem;
-  font-family: "Cormorant Garamond", serif;
-}
-
-.row_info hr {
-  border-top: solid black 3px;
-  width: 13%;
-  padding-bottom: 1rem;
-}
-
-@media only screen and (min-width: 600px) {
-  hr {
-    width: 8%;
-    border-top: solid black 3px;
-  }
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-}
 
 /* About */
 
@@ -279,6 +385,9 @@ hr {
 }
 
 /* Start Learn Section */
+.lead {
+  padding-bottom: 3rem;
+}
 
 .narrow {
   padding-top: 5rem;
@@ -303,6 +412,31 @@ hr {
 }
 /* End Learn Section */
 
+/* Start About Section */
+.row_2 h2 {
+  text-align: center;
+}
+/* End About Section */
+
+/* Start Prodcut Section */
+.product {
+  background-color: silver;
+  padding: 4rem 2rem;
+}
+
+.product-heading h2 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.product-heading h3 {
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+}
+/* End Prodcut Section */
+
 /* Start Fixed Background */
 .heading-underline {
   width: 4rem;
@@ -316,19 +450,30 @@ hr {
   z-index: -1;
   background-size: cover;
   background-attachment: fixed;
-  padding: 7rem 2rem;
+  padding: 7rem 4rem;
+}
+
+.fixed-background h1 {
+  text-align: center;
 }
 .fixed-background h2 {
   margin-bottom: 2rem;
   font-family: "Lato", sans-serif;
   font-weight: bolder;
+  text-align: center;
 }
 
 .fixed-background p {
   margin-top: 1.5rem;
   font-family: "Cormorant Garamond", serif;
+  padding: 0rem 3rem 0rem 3rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .fixed-background p {
+    padding: 0rem 0rem 0rem 0rem;
+  }
+}
 /* End Fixed Bacground */
 
 @media only screen and (min-width: 600px) {

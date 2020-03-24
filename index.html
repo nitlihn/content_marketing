@@ -7,9 +7,10 @@
     <title>My Bamboo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aebcf550e6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lato:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
 
 
 
@@ -19,6 +20,34 @@
 
 <body>
 
+    <header id="home">
+        <div class="container">
+            <div class="hamburger-menu">
+                <i class="fas fa-bars toggle"></i>
+                <i class="fas fa-times toggle displayNone"></i>
+            </div>
+            <nav class="d-flex align-items-center justify-content-center justify-content-lg-between">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="img/Logo.png" alt="">
+                </a>
+                <ul class="nav-list text-center p-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our_goal">Our Goal</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- 
     <div id="mySidenav" class="sidenav">
         <a id="kryds" class="closebtn">&#10005;</a>
         <a href="index.html">Home</a>
@@ -31,10 +60,10 @@
 
     <div class="menu_container">
         <p id="menu_burger">&equiv;</p>
-    </div>
+    </div> -->
 
 
-    <div id="home-navigation">
+    <!--    <div id="home-navigation">
         <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link" href="#slide-1">Drinks</a>
@@ -49,7 +78,7 @@
                 <a class="nav-link" href="#slide-4">Contact</a>
             </li>
         </ul>
-    </div>
+    </div> -->
 
     <!--  Start Landing Page Section -->
     <div id="carouselSlide" class="carousel slide" data-ride="carousel" data-interval="5200" data-pause="false">
@@ -135,16 +164,15 @@
                 <a class="btn btn-secondary btn-md" href="#">learn more</a>
             </div>
         </div>
-
         <!-- End Learn More -->
 
-
+        <!-- Start About Section -->
         <div class="container-fluid" style="padding: 100px 11% 100px 11%;">
             <div class="row">
                 <div class="col-12 order-md-1 col-md-6 col-xl-6 col-xxl-6 align-self-center" style="padding-left: 0%;">
                     <img class="d-block w-100" src="img/bamboo_3.png" alt="">
                 </div>
-                <div class="col-12 order-md-2 col-md-6 col-xl-6 col-xxl-6 align-self-center text-center">
+                <div class="col-12 order-md-2 col-md-6 col-xl-6 col-xxl-6 align-self-center">
                     <div class="row_2">
                         <h2>ABOUT</h2>
                         <hr>
@@ -164,11 +192,36 @@
                 </div>
             </div>
         </div>
+        <!--   End About Section -->
+
+        <!--  Product Section -->
+        <div class="product" id="product">
+            <div class="container">
+                <div class="row align-items-lg-center">
+                    <div class="col-12 col-md-6 text-center text-md-left">
+                        <div class="product-heading mb-3">
+                            <h2>Product</h2>
+                            <h3 class="display-4">Bamboo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga beatae quasi,
+                                tempora
+                                minima at, quis dicta architecto hic facilis voluptates assumenda quo? Velit, sit!
+                                Soluta a
+                                qui accusantium magni.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 ">
+                        <img class="img-fluid" src="img/bamboo_water_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  End Product Section -->
+
 
         <!--  Start Fixed Background -->
         <div id="resources" class="offset">
             <div class="fixed-background">
-                <div class="row text-center">
+                <div class="row">
                     <div class="col-12">
                         <h1>Lorem Ipsum</h1>
                         <div class="heading-underline"></div>
@@ -238,6 +291,7 @@
         </div>
 
         <!-- Footer-->
+
         <footer class="footer">
             <div class="media_wrapper">
                 <div class="item">

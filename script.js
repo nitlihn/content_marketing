@@ -1,4 +1,17 @@
-window.addEventListener("load", sidenVises);
+$(function () {
+    $('.hamburger-menu').on('click', function () {
+        $('.toggle').toggleClass('open');
+        $('.nav-list').toggleClass('open');
+    });
+});
+
+
+
+
+
+
+
+/* window.addEventListener("load", sidenVises);
 
 function sidenVises() {
     // Queryselector pÃ¥ burger menu
@@ -23,14 +36,14 @@ function sidenVises() {
 })(jQuery);
 
 /* Set the width of the side navigation to 250px */
-function openNav() {
+/* function openNav() {
     console.log("yo");
     document.querySelector("#mySidenav").style.height = "100%";
     document.querySelector("#kryds").addEventListener("click", closeNav)
-}
+} */
 
 /* Set the width of the side navigation to 0 */
-function closeNav() {
+/* function closeNav() {
     document.querySelector("#mySidenav").style.height = "0";
     document.querySelector(".menu_container").addEventListener("click", openNav)
-}
+} */
