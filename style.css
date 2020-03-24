@@ -13,7 +13,7 @@
 }
 
 a {
-  color: white !important;
+  color: black !important;
 }
 
 h1 {
@@ -402,13 +402,11 @@ header .container {
   font-size: 1rem;
   padding: 0.4rem 10rem;
   background-color: transparent;
-  color: black;
 }
 
 .btn-secondary:hover {
   border: 3px solid #beaf8c;
   background-color: #beaf8c;
-  color: white;
 }
 /* End Learn Section */
 
