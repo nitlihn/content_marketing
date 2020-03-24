@@ -398,7 +398,7 @@ header .container {
 .narrow {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgb(233, 225, 219);
+  background-color: #e1e6e0;
 }
 
 .btn-secondary {
@@ -424,7 +424,7 @@ header .container {
 
 /* Start Prodcut Section */
 .product {
-  background-color: silver;
+  background-color: #e1e6e0;
   padding: 4rem 2rem;
 }
 
