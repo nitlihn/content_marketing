@@ -1,3 +1,11 @@
+/* Start Preloader */
+setTimeout(function () {
+    $('.loader-bg').fadeToggle();
+}, 1000);
+/* End Menu & Preloader */
+
+
+/* Start Menu & Animation */
 $(function () {
     $('.hamburger-menu').on('click', function () {
         $('.toggle').toggleClass('open');
@@ -9,7 +17,7 @@ $(function () {
         duration: 1000
     });
 });
-
+/* End Menu & Animation */
 
 /* Start Instagram Deed  */
 (function ($) {
@@ -28,3 +36,4 @@ $(function () {
         });
     });
 })(jQuery);
+/* End Instagram Feed */
