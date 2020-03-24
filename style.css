@@ -54,6 +54,7 @@ header {
   height: 100vh;
   background-size: cover;
   position: relative;
+  font-family: "Lato", sans-serif;
 }
 
 header .container {
@@ -64,9 +65,9 @@ header .container {
 
 .navbar-brand {
   position: absolute;
-  width: 100%;
+  height: 100%;
   max-width: 100px;
-  top: 10px;
+  top: 25px;
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 650ms;
@@ -78,8 +79,8 @@ header .container {
 
 .hamburger-menu {
   position: fixed;
-  top: 25px;
-  right: 15px;
+  top: 30px;
+  right: 30px;
   width: 50px;
   height: 50px;
   display: flex;
