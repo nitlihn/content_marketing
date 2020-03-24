@@ -201,6 +201,7 @@ header {
   }
 }
 
+
 @media (min-width: 992px) {
   header>.container {
     padding: 0 15px;

@@ -24,15 +24,15 @@ $(function () {
     $(window).on('load', function () {
         $.instagramFeed({
             'username': 'My_Bamboo_',
-            'container': "#my-instagram-feed",
-            'display_profile': false,
-            'display_biography': false,
+            'container': ".instagram-feed",
+            'display_profile': true,
+            'display_biography': true,
             'display_gallery': true,
             'callback': null,
             'styling': true,
-            'items': 12,
-            'items_per_row': 6,
-            'margin': 0.25
+            'items': 8,
+            'items_per_row': 4,
+            'margin': 1
         });
     });
 })(jQuery);
