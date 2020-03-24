@@ -435,6 +435,11 @@ header .container {
   font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
 }
+
+.product img {
+  height: 50vh;
+  max-width: 100%;
+}
 /* End Prodcut Section */
 
 /* Start Fixed Background */
@@ -539,6 +544,10 @@ header .container {
 .footer hr {
   border-top: 1px solid rgba(225, 225, 225, 0.5);
   width: 100%;
+}
+
+.designed {
+  color: white;
 }
 /* End Footer */
 
