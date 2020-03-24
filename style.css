@@ -48,13 +48,8 @@
 }
 
 /* Start Global Styles */
-:root {
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --breakpoint-xxl: 1600px;
+body {
+  margin: 0;
 }
 
 * {
@@ -92,6 +87,7 @@ hr {
   width: 5%;
   padding-bottom: 2rem;
 }
+
 
 @media only screen and (min-width: 600px) {
   hr {
@@ -356,7 +352,6 @@ header {
 .infographics img {
   height: 90vh;
   max-width: 100%;
-  padding-top: 6rem;
 }
 
 /* End Prodcut Section */
