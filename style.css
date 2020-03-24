@@ -197,6 +197,8 @@ header {
   }
 }
 
+.lead {}
+
 @media (min-width: 786px) {
   .lead {
     padding: 1rem 0 2rem 0;

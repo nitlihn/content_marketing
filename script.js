@@ -1,7 +1,7 @@
 /* Start Preloader */
-setTimeout(function () {
+/* setTimeout(function () {
     $('.loader-bg').fadeToggle();
-}, 1000);
+}, 1000); */
 /* End Menu & Preloader */
 
 
