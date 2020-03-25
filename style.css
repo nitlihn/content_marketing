@@ -203,7 +203,7 @@ header {
 
 
 @media (min-width: 992px) {
-    header > .container {
+    header>.container {
         padding: 0 15px;
     }
 
@@ -395,10 +395,9 @@ header {
     }
 }
 
-/* Instagram */
-
-
 /* End Fixed Bacground */
+
+/* Instagram */
 
 @media only screen and (min-width: 600px) {
     .row_2 p {
