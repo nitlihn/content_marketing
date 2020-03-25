@@ -30,7 +30,7 @@ $(function () {
             'display_gallery': true,
             'callback': null,
             'styling': true,
-            'items': 8,
+            'items': 9,
             'items_per_row': 3,
             'margin': 1
         });
