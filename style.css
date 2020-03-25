@@ -395,6 +395,19 @@ header {
     }
 }
 
+/* Instagram */
+article,
+aside,
+figcaption,
+figure,
+hgroup,
+section {
+    display: block;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+
 /* End Fixed Bacground */
 
 /* Instagram */
